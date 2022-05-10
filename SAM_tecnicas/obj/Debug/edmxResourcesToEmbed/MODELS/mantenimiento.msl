@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MantenimientoModelStoreContainer" CdmEntityContainer="MantenimientoEntities">
+    <EntitySetMapping Name="hv">
+      <EntityTypeMapping TypeName="MantenimientoModel.hv">
+        <MappingFragment StoreEntitySet="hv">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="fi" ColumnName="fi" />
+          <ScalarProperty Name="trabajo" ColumnName="trabajo" />
+          <ScalarProperty Name="ff" ColumnName="ff" />
+          <ScalarProperty Name="mante" ColumnName="mante" />
+          <ScalarProperty Name="operario" ColumnName="operario" />
+          <ScalarProperty Name="insumos" ColumnName="insumos" />
+          <ScalarProperty Name="observa" ColumnName="observa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ingreso">
+      <EntityTypeMapping TypeName="MantenimientoModel.ingreso">
+        <MappingFragment StoreEntitySet="ingreso">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tarjeta">
+      <EntityTypeMapping TypeName="MantenimientoModel.tarjeta">
+        <MappingFragment StoreEntitySet="tarjeta">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="fabricante" ColumnName="fabricante" />
+          <ScalarProperty Name="seccion" ColumnName="seccion" />
+          <ScalarProperty Name="alto" ColumnName="alto" />
+          <ScalarProperty Name="ancho" ColumnName="ancho" />
+          <ScalarProperty Name="largo" ColumnName="largo" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="medios" ColumnName="medios" />
+          <ScalarProperty Name="voltaje" ColumnName="voltaje" />
+          <ScalarProperty Name="corriente" ColumnName="corriente" />
+          <ScalarProperty Name="potencia" ColumnName="potencia" />
+          <ScalarProperty Name="funcion" ColumnName="funcion" />
+          <ScalarProperty Name="ph" ColumnName="ph" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MantenimientoModelStoreContainer" CdmEntityContainer="MantenimientoEntities1">
+    <EntitySetMapping Name="hv">
+      <EntityTypeMapping TypeName="MantenimientoModel.hv">
+        <MappingFragment StoreEntitySet="hv">
+          <ScalarProperty Name="observa" ColumnName="observa" />
+          <ScalarProperty Name="insumos" ColumnName="insumos" />
+          <ScalarProperty Name="operario" ColumnName="operario" />
+          <ScalarProperty Name="mante" ColumnName="mante" />
+          <ScalarProperty Name="ff" ColumnName="ff" />
+          <ScalarProperty Name="trabajo" ColumnName="trabajo" />
+          <ScalarProperty Name="fi" ColumnName="fi" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ingreso">
+      <EntityTypeMapping TypeName="MantenimientoModel.ingreso">
+        <MappingFragment StoreEntitySet="ingreso">
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tarjeta">
+      <EntityTypeMapping TypeName="MantenimientoModel.tarjeta">
+        <MappingFragment StoreEntitySet="tarjeta">
+          <ScalarProperty Name="ph" ColumnName="ph" />
+          <ScalarProperty Name="funcion" ColumnName="funcion" />
+          <ScalarProperty Name="potencia" ColumnName="potencia" />
+          <ScalarProperty Name="corriente" ColumnName="corriente" />
+          <ScalarProperty Name="voltaje" ColumnName="voltaje" />
+          <ScalarProperty Name="medios" ColumnName="medios" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="largo" ColumnName="largo" />
+          <ScalarProperty Name="ancho" ColumnName="ancho" />
+          <ScalarProperty Name="alto" ColumnName="alto" />
+          <ScalarProperty Name="seccion" ColumnName="seccion" />
+          <ScalarProperty Name="fabricante" ColumnName="fabricante" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orden">
+      <EntityTypeMapping TypeName="MantenimientoModel.orden">
+        <MappingFragment StoreEntitySet="orden">
+          <ScalarProperty Name="recibido" ColumnName="recibido" />
+          <ScalarProperty Name="causa" ColumnName="causa" />
+          <ScalarProperty Name="evaluacion" ColumnName="evaluacion" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="indicadores" ColumnName="indicadores" />
+          <ScalarProperty Name="importeHH" ColumnName="importeHH" />
+          <ScalarProperty Name="costohh" ColumnName="costohh" />
+          <ScalarProperty Name="duracion" ColumnName="duracion" />
+          <ScalarProperty Name="importe" ColumnName="importe" />
+          <ScalarProperty Name="Pu" ColumnName="Pu" />
+          <ScalarProperty Name="cantida" ColumnName="cantida" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="nombre_t" ColumnName="nombre_t" />
+          <ScalarProperty Name="mto" ColumnName="mto" />
+          <ScalarProperty Name="prioridad" ColumnName="prioridad" />
+          <ScalarProperty Name="recursos" ColumnName="recursos" />
+          <ScalarProperty Name="Necco" ColumnName="Necco" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechafi" ColumnName="fechafi" />
+          <ScalarProperty Name="fechaini" ColumnName="fechaini" />
+          <ScalarProperty Name="local" ColumnName="local" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="edificio" ColumnName="edificio" />
+          <ScalarProperty Name="empresa" ColumnName="empresa" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MantenimientoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MantenimientoEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="hv" EntityType="MantenimientoModel.hv" />
+    <EntitySet Name="ingreso" EntityType="MantenimientoModel.ingreso" />
+    <EntitySet Name="tarjeta" EntityType="MantenimientoModel.tarjeta" />
+    <EntitySet Name="orden" EntityType="MantenimientoModel.orden" />
+  </EntityContainer>
+  <EntityType Name="hv">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="codigo" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="fi" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="trabajo" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ff" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="mante" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="operario" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="insumos" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="observa" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ingreso">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usuario" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="contraseña" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tarjeta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="marca" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="modelo" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="fabricante" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="seccion" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="alto" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ancho" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="largo" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="color" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="medios" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="voltaje" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="corriente" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="potencia" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="funcion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="ph" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="orden">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="edificio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="area" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="local" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaini" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechafi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Necco" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="recursos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="prioridad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="mto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_t" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="material" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cantida" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pu" Type="Int64" />
+    <Property Name="importe" Type="Int64" />
+    <Property Name="duracion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="costohh" Type="Int64" />
+    <Property Name="importeHH" Type="Int64" />
+    <Property Name="indicadores" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="observaciones" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="evaluacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="causa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="recibido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

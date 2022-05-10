@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MantenimientoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="hv">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="codigo" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="fi" Type="date" Nullable="false" />
+    <Property Name="trabajo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ff" Type="date" Nullable="false" />
+    <Property Name="mante" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="operario" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="insumos" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="observa" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ingreso">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usuario" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="contraseña" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <EntityType Name="orden">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="empresa" Type="varchar" MaxLength="50" />
+    <Property Name="edificio" Type="varchar" MaxLength="50" />
+    <Property Name="area" Type="varchar" MaxLength="50" />
+    <Property Name="local" Type="varchar" MaxLength="50" />
+    <Property Name="fechaini" Type="varchar" MaxLength="50" />
+    <Property Name="fechafi" Type="varchar" MaxLength="50" />
+    <Property Name="descripcion" Type="varchar" MaxLength="200" />
+    <Property Name="Necco" Type="varchar" MaxLength="50" />
+    <Property Name="recursos" Type="varchar" MaxLength="50" />
+    <Property Name="prioridad" Type="varchar" MaxLength="50" />
+    <Property Name="mto" Type="varchar" MaxLength="50" />
+    <Property Name="nombre_t" Type="varchar" MaxLength="50" />
+    <Property Name="material" Type="varchar" MaxLength="50" />
+    <Property Name="cantida" Type="varchar" MaxLength="50" />
+    <Property Name="Pu" Type="bigint" />
+    <Property Name="importe" Type="bigint" />
+    <Property Name="duracion" Type="varchar" MaxLength="50" />
+    <Property Name="costohh" Type="bigint" />
+    <Property Name="importeHH" Type="bigint" />
+    <Property Name="indicadores" Type="varchar" MaxLength="200" />
+    <Property Name="observaciones" Type="varchar" MaxLength="200" />
+    <Property Name="evaluacion" Type="varchar" MaxLength="50" />
+    <Property Name="causa" Type="varchar" MaxLength="50" />
+    <Property Name="recibido" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tarjeta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="marca" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="modelo" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="fabricante" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="seccion" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="alto" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="ancho" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="largo" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="color" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="medios" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="voltaje" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="corriente" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="potencia" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="funcion" Type="varchar" MaxLength="90" />
+    <Property Name="ph" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="MantenimientoModelStoreContainer">
+    <EntitySet Name="hv" EntityType="Self.hv" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ingreso" EntityType="Self.ingreso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="orden" EntityType="Self.orden" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tarjeta" EntityType="Self.tarjeta" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
